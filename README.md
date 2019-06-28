@@ -14,20 +14,50 @@
 
 Write code that prints all the numbers from 1 to 150, **inclusive.**
 
+var daNumbas = 0
+let daRange = 1...150
+
+for _ in daRange {
+daNumbas += 1
+print(daNumbas)
+}
+
+
+
 ***
 ## Question 2
 
 Write code that prints all the numbers from 142 to 159, **exclusive.**
+
+var daNumbas = 0
+let daRange = 142..<159
+
+for _ in daRange {
+daNumbas += 1
+print(daNumbas)
+}
 
 ***
 ## Question 3
 
 Write code that prints only the even numbers from 15 to 80, **inclusive.**
 
+var daNumbas = 0
+let daRange = 15...80
+
+for _ in daRange {
+daNumbas += 1
+if daNumbas % 2 == 0 {
+print(daNumbas)
+}
+}
+
 ***
 ## Question 4
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
+
+
 
 ***
 ## Question 5
