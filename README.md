@@ -23,7 +23,6 @@ print(daNumbas)
 }
 
 
-
 ***
 ## Question 2
 
@@ -137,12 +136,23 @@ if daNumbas % 10 == 4 {
 print(daNumbas)
 }
 }
+
 ***
 ## Question 10
 
 Given a range of numbers from 20 to 150, print out all the numbers that follows these conditions:
 
 `Print out numbers: 31, 35, 40 to 60.`
+
+var daNumbas = 0
+let daRange = 20...150
+
+for _ in daRange {
+daNumbas += 1
+if (daNumbas == 31 || daNumbas == 35 || daNumbas >= 40 && daNumbas <= 60) {
+print(daNumbas)
+}
+}
 
 ***
 ## Question 11
@@ -158,6 +168,7 @@ while (i > 3) {
 
 // Your explanation here
 ```
+It will run infinite times because "i" initialize at 5 and 5 is always greater than 3
 
 ***
 ## Question 12
@@ -171,6 +182,11 @@ while (i > 3) {
     i += 1
 }
 ```
+var i = 5
+
+while (i > 3) && i < 9 {
+i += 1
+}
 
 ***
 ## Question 13
@@ -184,6 +200,11 @@ while (i > 3) {
     i += 1
 }
 ```
+var i = 5
+
+while (i > 3) && i < 1005 {
+i += 1
+}
 
 ***
 ## Question 14
@@ -197,6 +218,14 @@ while (i > 3) {
     i += 1
 }
 ```
+var i = 5
+
+while (i > 3) && i < 1005 {
+i += 1
+if i % 2 == 0 {
+print(i)
+}
+}
 
 ***
 ## Question 15
@@ -219,11 +248,14 @@ repeat {
     i += 1
 } while i <= 10
 ```
+The result is the same but the method is different due to the While function executes based on condition first and the Repeat function runs the block first then checks the condition of While.
 
 ***
 ## Question 16
 
 What's the difference between `break` and `continue`?  Give an example that demonstrates their differences.
+
+Break stops the function once a condition is met whereas continue progresses the function even if the condition is met.
 
 ***
 ## Question 17
