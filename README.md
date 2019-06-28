@@ -77,7 +77,7 @@ Write code that prints all the numbers that end in a **5** from 1 to 100, **excl
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
 
 var daNumbas = 0
-let daRange = 7...40
+let daRange = 1...40
 
 for _ in daRange {
 daNumbas += 1
@@ -282,6 +282,7 @@ for i in 1...10 {
 []9
 []10
 
+At glance it will print 1, 2, 3, 7, 8, 9, 10
 ***
 ## Question 18
 
@@ -307,6 +308,8 @@ for i in 1...10 {
 []9
 []10
 
+at glance it will run 1, 2, 3 and then stop
+
 ***
 ## Question 19
 
@@ -322,16 +325,32 @@ outerloop: for x in 1...3 {
     }
 }
 ```
+It will print "x = 1, y = 1" then it will go back to the outloop because y = 2 and then print "x = 2, y = 1". It seems like y will never be 3 because whenever y = 2 it continues to the outerloop
 
 ***
 ## Question 20
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** x and y are both integers.
 
+for x in 0...10 {
+for y in 0...10 {
+print("x = \(x), y = \(y)")
+}
+}
+
 ***
 ## Question 21
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** the difference of x and y is at least 5, and x and y are both integers.
+
+for x in 0...10 {
+for y in 0...10 {
+if x - y >= 5 || y - x >= 5 {
+print("x = \(x), y = \(y)")
+}
+}
+}
+
 
 ***
 ## Question 22
@@ -349,6 +368,11 @@ Output:
 16
 25
 ```
+var N = 5
+
+for i in 1...N {
+print(i * i)
+}
 
 ***
 ## Question 23
