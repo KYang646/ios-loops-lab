@@ -57,7 +57,15 @@ print(daNumbas)
 
 Write code that prints only the odd numbers from 19 to 51, **inclusive.**
 
+var daNumbas = 0
+let daRange = 19...51
 
+for _ in daRange {
+daNumbas += 1
+if daNumbas % 2 != 0 {
+print(daNumbas)
+}
+}
 
 ***
 ## Question 5
@@ -69,12 +77,32 @@ Write code that prints all the numbers that end in a **5** from 1 to 100, **excl
 
 Write code that prints all the numbers that end in a 7 from 1 to 40, **inclusive.**
 
+var daNumbas = 0
+let daRange = 7...40
+
+for _ in daRange {
+daNumbas += 1
+if daNumbas % 10 == 7 {
+print(daNumbas)
+}
+}
+
 ***
 ## Question 7
 
 Given a range of numbers from 20 to 150 inclusive, print out all the numbers that follows these conditions:
 
 `Numbers that are divisible by 3`
+
+var daNumbas = 0
+let daRange = 20...150
+
+for _ in daRange {
+daNumbas += 1
+if daNumbas % 3 == 0 {
+print(daNumbas)
+}
+}
 
 ***
 ## Question 8
@@ -83,6 +111,16 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that are divisible by 2 and 3`
 
+var daNumbas = 0
+let daRange = 20...150
+
+for _ in daRange {
+daNumbas += 1
+if daNumbas % 2 == 0 && daNumbas % 3 == 0 {
+print(daNumbas)
+}
+}
+
 ***
 ## Question 9
 
@@ -90,6 +128,15 @@ Given a range of numbers from 20 to 150 inclusive, print out all the numbers tha
 
 `Numbers that end with a 4`
 
+var daNumbas = 0
+let daRange = 20...150
+
+for _ in daRange {
+daNumbas += 1
+if daNumbas % 10 == 4 {
+print(daNumbas)
+}
+}
 ***
 ## Question 10
 
