@@ -405,3 +405,12 @@ Hint 2
 You can use print("") to print an empty line.
 
 ***
+
+var N = 3
+
+for i in 1...N {
+
+for i in 1...N {
+print("*"), :separator (""), :terminator ("")
+}
+}
