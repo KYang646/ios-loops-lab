@@ -332,11 +332,10 @@ It will print "x = 1, y = 1" then it will go back to the outloop because y = 2 a
 
 Write code that prints out all the points in the area bounded by (0,0), (10,0), (0,10) and (10,10) **where** x and y are both integers.
 
-for x in 0...10 {
-for y in 0...10 {
-print("x = \(x), y = \(y)")
-}
-}
+var x = 0
+var y = 0
+
+for x in 0...10 { for y in 0...10 { print("x = \(x), y = \(y)") } }
 
 ***
 ## Question 21
